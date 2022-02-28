@@ -16,8 +16,7 @@ function DevUI({ web3 }) {
 
       <ThemeSwitch />
 
-      {/* 🗺 Extra UI like gas price, eth price, faucet, and support: */}
-      <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 8, padding: 10 }}>
+      {/* <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 8, padding: 10 }}>
         <Row align="middle" gutter={[4, 4]}>
           <Col span={8}>
             <Ramp {...web3} networks={NETWORKS} />
@@ -43,14 +42,9 @@ function DevUI({ web3 }) {
         </Row>
 
         <Row align="middle" style={{ marginTop: 10 }} gutter={[4, 4]}>
-          <Col span={24}>
-            {
-              /*  if the local provider has a signer, let's show the faucet:  */
-              web3.faucetAvailable ? <Faucet {...web3} ensProvider={web3.mainnetProvider} /> : ""
-            }
-          </Col>
+          <Col span={24}>{web3.faucetAvailable ? <Faucet {...web3} ensProvider={web3.mainnetProvider} /> : ""}</Col>
         </Row>
-      </div>
+      </div> */}
     </>
   );
 }
