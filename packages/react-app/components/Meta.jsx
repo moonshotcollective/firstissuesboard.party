@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function Meta() {
   const metaContent = {
-    title: 'Tip.Party',
-    url: 'https://tip.party',
-    description: `Send ETH/Coin tips to multiple members of your community at once with a Tip Party.`,
-    image: '',
-  }
+    title: "Bounty.Party",
+    url: "https://bounty.party",
+    description: `Get Started on your next contribution to a Moonshot Collective Project Here`,
+    image: "",
+  };
 
   return (
     <>
@@ -19,13 +19,11 @@ export default function Meta() {
       <meta property="og:url" content={metaContent.url} />
       <meta property="og:title" content={metaContent.title} />
       <meta property="og:description" content={metaContent.description} />
-      {/* <meta property="og:image" content="" /> */}
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={metaContent.url} />
       <meta property="twitter:title" content={metaContent.title} />
       <meta property="twitter:description" content={metaContent.description} />
-      {/* <meta property="twitter:image" content="" /> */}
     </>
-  )
+  );
 }

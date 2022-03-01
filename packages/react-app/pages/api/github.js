@@ -43,6 +43,7 @@ export default async (req, res) => {
           updated_at: i.updated_at,
           project_name: repository_url_arr[repository_url_arr.length - 1],
           project_url: `${repoURLBeginning}${url_arr.slice(-4, repository_url_arr.length).join("/")}`,
+          body: i.body,
         };
       });
     result.push(tempFiltered);

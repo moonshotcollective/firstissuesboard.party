@@ -109,12 +109,10 @@ export default function Address(props) {
 
   return (
     <span>
-      <span style={{ verticalAlign: "middle" }}>
+      <div className="h-full flex items-center p-4">
         <Blockies seed={address.toLowerCase()} size={8} scale={props.fontSize ? props.fontSize / 7 : 4} />
-      </span>
-      <span style={{ verticalAlign: "middle", paddingLeft: 5, fontSize: props.fontSize ? props.fontSize : 28 }}>
-        {text}
-      </span>
+        <h2 className="text-gray-900 title-font font-medium text-xl px-2">{text}</h2>
+      </div>
     </span>
   );
 }

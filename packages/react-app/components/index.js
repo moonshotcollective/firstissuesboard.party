@@ -20,3 +20,5 @@ export { default as L2Bridge } from "./L2Bridge";
 export { default as CardView } from "./Card";
 export { default as DevUI } from "./DevUI";
 export { default as Meta } from "./Meta";
+export { default as Footer } from "./Footer";
+export { default as HomeFaq } from "./HomeFaq";
