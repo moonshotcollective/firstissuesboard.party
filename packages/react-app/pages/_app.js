@@ -34,29 +34,27 @@ function MyApp({ Component, pageProps }) {
   return (
     <Web3Provider network={targetNetwork}>
       <ThemeSwitcherProvider themeMap={themes} defaultTheme={prevTheme.current}>
-        <>
-          <Head>
-            <link
-              rel="icon"
-              href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗</text></svg>"
-            />
-          </Head>
-          <Header />
-          {/* <DevUI /> */}
+        <Header />
+        {/* <DevUI /> */}
 
-          <Affix>
-            <StyledMenu style={{ textAlign: "left" }} selectedKeys={[router.asPath]} mode="horizontal">
-              <Menu.Item key="/">
-                <Link href="/">
-                  <a>Home</a>
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="/issues">
+        <Affix>
+          <Menu style={{ textAlign: "left", padding: 10 }} selectedKeys={[router.asPath]} mode="horizontal">
+            <Menu.Item key="/">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="/issues">
+              <Link href="/issues">
+                <a>Dev Issues</a>
+              </Link>
+            </Menu.Item>
+            {/* <Menu.Item key="/issues">
                 <Link href="/issues">
-                  <a>Dev Bounties</a>
+                  <a>Design Issues</a>
                 </Link>
-              </Menu.Item>
-              <Menu.Item key="/yourcollectibles">
+              </Menu.Item> */}
+            {/* <Menu.Item key="/yourcollectibles">
                 <Link href="/yourcollectibles">
                   <a>YourCollectibles</a>
                 </Link>
@@ -80,17 +78,16 @@ function MyApp({ Component, pageProps }) {
                 <Link href="/debugcontracts">
                   <a>Debug Contracts</a>
                 </Link>
-              </Menu.Item>
-            </StyledMenu>
-            <div style={{ textAlign: "right", right: 0, top: 0, padding: 10 }}>
-              <div style={{ display: "flex", flex: 1, alignItems: "center" }}>
-                <DevUI />
-              </div>
+              </Menu.Item> */}
+          </Menu>
+          <div style={{ textAlign: "right", right: 0, top: 0, padding: 10 }}>
+            <div style={{ display: "flex", flex: 1, alignItems: "center" }}>
+              <DevUI />
             </div>
-          </Affix>
+          </div>
+        </Affix>
 
-          <Component {...pageProps} />
-        </>
+        <Component {...pageProps} />
       </ThemeSwitcherProvider>
     </Web3Provider>
   );

@@ -14,7 +14,7 @@ function DevUI({ web3 }) {
         {web3.faucetHint}
       </div>
 
-      <ThemeSwitch />
+      {/* <ThemeSwitch /> */}
 
       {/* <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 8, padding: 10 }}>
         <Row align="middle" gutter={[4, 4]}>

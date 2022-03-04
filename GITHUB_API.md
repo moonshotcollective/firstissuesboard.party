@@ -1,0 +1,81 @@
+{
+"url": "https://api.github.com/repos/moonshotcollective/tip.party/issues/214",
+"repository_url": "https://api.github.com/repos/moonshotcollective/tip.party",
+"labels_url": "https://api.github.com/repos/moonshotcollective/tip.party/issues/214/labels{/name}",
+"comments_url": "https://api.github.com/repos/moonshotcollective/tip.party/issues/214/comments",
+"events_url": "https://api.github.com/repos/moonshotcollective/tip.party/issues/214/events",
+"html_url": "https://github.com/moonshotcollective/tip.party/issues/214",
+"id": 1094649360,
+"node_id": "I_kwDOF8n6qM5BPwYQ",
+"number": 214,
+"title": "Show an error when one of the network RPC urls are out",
+"user": {
+"login": "farque65",
+"id": 8276680,
+"node_id": "MDQ6VXNlcjgyNzY2ODA=",
+"avatar_url": "https://avatars.githubusercontent.com/u/8276680?v=4",
+"gravatar_id": "",
+"url": "https://api.github.com/users/farque65",
+"html_url": "https://github.com/farque65",
+"followers_url": "https://api.github.com/users/farque65/followers",
+"following_url": "https://api.github.com/users/farque65/following{/other_user}",
+"gists_url": "https://api.github.com/users/farque65/gists{/gist_id}",
+"starred_url": "https://api.github.com/users/farque65/starred{/owner}{/repo}",
+"subscriptions_url": "https://api.github.com/users/farque65/subscriptions",
+"organizations_url": "https://api.github.com/users/farque65/orgs",
+"repos_url": "https://api.github.com/users/farque65/repos",
+"events_url": "https://api.github.com/users/farque65/events{/privacy}",
+"received_events_url": "https://api.github.com/users/farque65/received_events",
+"type": "User",
+"site_admin": false
+},
+"labels": [
+{
+"id": 3287224249,
+"node_id": "MDU6TGFiZWwzMjg3MjI0MjQ5",
+"url": "https://api.github.com/repos/moonshotcollective/tip.party/labels/bug",
+"name": "bug",
+"color": "d73a4a",
+"default": true,
+"description": "Something isn't working"
+},
+{
+"id": 3287224258,
+"node_id": "MDU6TGFiZWwzMjg3MjI0MjU4",
+"url": "https://api.github.com/repos/moonshotcollective/tip.party/labels/good%20first%20issue",
+"name": "good first issue",
+"color": "7057ff",
+"default": true,
+"description": "Good for newcomers"
+}
+],
+"state": "open",
+"locked": false,
+"assignee": null,
+"assignees": [
+
+],
+"milestone": null,
+"comments": 0,
+"created_at": "2022-01-05T18:50:12Z",
+"updated_at": "2022-01-25T18:26:11Z",
+"closed_at": null,
+"author_association": "CONTRIBUTOR",
+"active_lock_reason": null,
+"body": "The following display on the room block shows the login because the RPC url has hit a request limit. An error should show so support can update the PRC url.\r\n\r\n<img width=\"1258\" alt=\"Screen Shot 2022-01-05 at 2 05 46 PM\" src=\"https://user-images.githubusercontent.com/8276680/148274274-1886ad82-84c3-42bf-934e-a262d310ec34.png\">\r\n",
+"closed_by": null,
+"reactions": {
+"url": "https://api.github.com/repos/moonshotcollective/tip.party/issues/214/reactions",
+"total_count": 1,
+"+1": 1,
+"-1": 0,
+"laugh": 0,
+"hooray": 0,
+"confused": 0,
+"heart": 0,
+"rocket": 0,
+"eyes": 0
+},
+"timeline_url": "https://api.github.com/repos/moonshotcollective/tip.party/issues/214/timeline",
+"performed_via_github_app": null
+}

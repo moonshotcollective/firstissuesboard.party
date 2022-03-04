@@ -16,30 +16,27 @@ const faqs = [
   },
   {
     header: "How are the Pull Requests Approved?",
-    description: "A member of the project team will review the Pull Request. Reply to the comments on github.",
-  },
-  {
-    header: "Contribution Guideline",
-    description: (
-      <ul className="list-disc p-2">
-        <li>Fork the Project Repository</li>
-        <li>Find an issue with the label Good First Issue</li>
-        <li>Push a Pull Request to the Forked Repository</li>
-      </ul>
-    ),
+    description: "A member of the project team will review the Pull Request",
   },
 ];
 
 export default function HomeFaq() {
   return (
-    <div className="p-10 bg-gray-100">
+    <div className="p-10 bg-white">
+      <div className="text-center mb-4">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">📝 Faq</h1>
+        <div className="flex mt-6 justify-center">
+          <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
       <Collapse style={{ border: 0 }}>
         {faqs.map(item => (
           <Panel
             header={item.header}
             key={item.header}
-            extra={<PlusOutlined style={{ color: "blue" }} />}
+            extra={<PlusOutlined style={{ color: "#8C65F7" }} />}
             showArrow={false}
+            style={{ backgroundColor: "white", borderColor: "#8C65F7" }}
           >
             {item.description}
           </Panel>

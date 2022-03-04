@@ -5,8 +5,8 @@ import React from "react";
 
 export default function Header() {
   return (
-    <a href="https://github.com/austintgriffith/scaffold-eth" target="_blank" rel="noopener noreferrer">
-      <PageHeader title="Bounty.Party" subTitle="Moonshot Collective Bounty Board" style={{ cursor: "pointer" }} />
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <PageHeader title="🚀🌙 First Issues Board" subTitle="Find tasks to work on" style={{ cursor: "pointer" }} />
     </a>
   );
 }
