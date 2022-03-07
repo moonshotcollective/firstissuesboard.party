@@ -95,6 +95,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "next:build": "next build",
